@@ -1,0 +1,130 @@
+:root {
+  --standard-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--standard-font);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.container>* {
+  flex-grow: 1;
+  flex: 1 1 0px;
+}
+
+spacing {
+  height: 5vh;
+  display: block;
+}
+
+/* Headlines */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Futura, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 100;
+  line-height: 1.2rem;
+}
+
+.subheadline {
+  letter-spacing: 5px;
+}
+
+
+/* Main Section */
+.main {
+  color: #463B23;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main>* {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 801px) {
+  .main {
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .main>* {
+    padding: 80px;
+  }
+}
+
+.main .event-overview {
+  background-color: #F7F2DB;
+  border-bottom: 2px solid #010101;
+
+}
+
+.main p {
+  line-height: 1.5rem;
+}
+
+/* Media Section */
+.media {
+  background-color: #D9E8F5;
+  background-image: url("../images/long.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .media {
+    order: -1;
+  }
+
+  .container div {
+    flex: auto;
+  }
+
+  .media {
+    background-color: #D9E8F5;
+    background-image: url("../images/wide.jpg");
+    min-height: 50vh;
+  }
+}
+
+/* RSVP Button */
+#RSVP {
+  display: block;
+  background-color: #010101;
+  padding: 20px 30px;
+  color: white;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  border-radius: 1000px;
+  white-space: pre;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}

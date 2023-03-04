@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>30th Birtday Bash</title>
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="event-overview">
+        <h1 id="headline"></h1>
+        <h5 id="subheadline" class="subheadline"></h5>
+        <spacing></spacing>
+        <p id="shortDescription"></p>
+        <h5>
+          <span id="date"></span> <br />
+          <span id="time"></span>
+        </h5>
+        <p id="location"></p>
+      </div>
+      <div class="event-details">
+
+        <h2>Details</h2>
+
+        <h4>To heat you up</h4>
+        <p>Tropical sounds & electro beats will keep you moving.</p>
+
+        <h4>To cool you down</h4>
+        <p>We'll keep you hydrated and put some drinks on ice. Please also bring your own.
+          <br /><br />
+          Boys: Look good or barefoot
+          <br />
+          Girls: Top dress or topless
+        </p>
+      </div>
+    </div>
+    <div class="media"></div>
+  </div>
+  <a id="RSVP">R S V P</a>
+  <div id="enter-details">
+    <div id="form">
+      <h5>Can you make it ?</h5>
+
+      <p>What's your name?</p>
+      <input id="form-name" placeholder="Enter your name" />
+
+      <p>What's your email address?</p>
+      <input id="form-email" placeholder="Enter your email address" />
+
+      <p>Total attending (including you)</p>
+      <input id="form-total-attending" />
+
+      <p>Your message to <span id="hosts"></span> (optional)</p>
+      <textarea id="form-message" placeholder="Enter your message"></textarea>
+
+      <p id="form-success"></p>
+      <button id="submit">Submit</button>
+    </div>
+  </div>
+  <script src="js/loadEventData.js"></script>
+  <script src="js/rsvp.js"></script>
+</body>
+
+</html>

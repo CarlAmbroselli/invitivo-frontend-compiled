@@ -1,0 +1,114 @@
+#enter-details {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+  max-height: 100%;
+  overflow: scroll;
+  /* display:  block; */
+}
+
+#form {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  width: 800px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#form h5 {
+  font-size: 1.3em;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#form p {
+  color: #333333;
+  font-size: 0.75em;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+#form h5 {
+  text-align: center;
+}
+
+#form input,
+#form textarea {
+  border: 1px solid rgb(221, 221, 221);
+  display: block;
+  font-family: inherit;
+  height: 48px;
+  opacity: 1;
+  padding: 0px 0.6rem;
+  width: 100%;
+  appearance: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-top-width: 1px;
+  margin-bottom: 15px;
+}
+
+#form textarea {
+  padding: 0.8rem;
+  min-height: 120px;
+}
+
+#form button {
+  pointer-events: auto;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  overflow: visible;
+  -webkit-font-smoothing: inherit;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(0, 90, 200);
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  font-family: "Basis Grotesque", Helvetica, Arial, sans-serif;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px;
+  outline: none;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  height: 48px;
+  padding: 0px 24px;
+  width: 100%;
+}
+
+#form #form-success {
+  display: none;
+  color: rgb(15, 108, 15);
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #form {
+    width: 100%;
+  }
+}
