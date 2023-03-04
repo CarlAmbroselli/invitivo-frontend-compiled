@@ -15,7 +15,7 @@ function submit() {
     count_attending: document.getElementById("form-total-attending").value,
     message: document.getElementById("form-message").value,
   }
-  fetch('https://www.airsequel.com/dbs/01gt94cxgggw724pf8vfyxnfh6/graphql', {
+  fetch('https://api.invitivo.com/rsvp/30th', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json'
